@@ -182,7 +182,7 @@
               </af:inputText>
             </af:panelFormLayout>
             <af:panelCollection id="pc8"
-                                inlineStyle="height:210px; width:100.0%;"
+                                inlineStyle="height:210px; "
                                 styleClass="AFStretchWidth">
               <f:facet name="menus"/>
               <f:facet name="toolbar">
