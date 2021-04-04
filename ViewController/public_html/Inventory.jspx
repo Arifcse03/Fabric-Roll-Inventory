@@ -37,7 +37,9 @@
                                   label="#{bindings.UnitName.label}"
                                   required="#{bindings.UnitName.hints.mandatory}"
                                   shortDesc="#{bindings.UnitName.hints.tooltip}"
-                                  id="soc1">
+                                  id="soc1"
+                                  readOnly="#{bindings.UnitName.inputValue eq null ? 'false' : 'true'}"
+                                  autoSubmit="true">
                 <f:selectItems value="#{bindings.UnitName.items}" id="si1"/>
               </af:selectOneChoice>
               <af:inputText value="#{bindings.InvoiceNo.inputValue}"
@@ -45,7 +47,8 @@
                             columns="#{bindings.InvoiceNo.hints.displayWidth}"
                             maximumLength="#{bindings.InvoiceNo.hints.precision}"
                             shortDesc="#{bindings.InvoiceNo.hints.tooltip}"
-                            id="it24" required="true">
+                            id="it24" required="true"
+                            readOnly="#{bindings.InvoiceNo.inputValue eq null ? 'false' :'true'}">
                 <f:validator binding="#{bindings.InvoiceNo.validator}"/>
               </af:inputText>
               <af:inputDate value="#{bindings.UpdateOn.inputValue}"
@@ -74,7 +77,8 @@
                                     required="#{bindings.RollTransferOrganization.hints.mandatory}"
                                     columns="#{bindings.RollTransferOrganization.hints.displayWidth}"
                                     shortDesc="#{bindings.RollTransferOrganization.hints.tooltip}"
-                                    autoSubmit="true">
+                                    autoSubmit="true"
+                                    readOnly="#{bindings.RollTransferOrganization.inputValue eq null ? 'false' :'true'}">
                 <f:validator binding="#{bindings.RollTransferOrganization.validator}"/>
               </af:inputListOfValues>
               <af:inputComboboxListOfValues id="receiveNoId"
@@ -125,8 +129,8 @@
                             columns="#{bindings.OrgId.hints.displayWidth}"
                             maximumLength="#{bindings.OrgId.hints.precision}"
                             shortDesc="#{bindings.OrgId.hints.tooltip}"
-                            id="it8" partialTriggers="unitNameId"
-                            visible="false">
+                            id="it8"
+                            visible="false" partialTriggers="soc1">
                 <f:validator binding="#{bindings.OrgId.validator}"/>
                 <af:convertNumber groupingUsed="false"
                                   pattern="#{bindings.OrgId.format}"/>

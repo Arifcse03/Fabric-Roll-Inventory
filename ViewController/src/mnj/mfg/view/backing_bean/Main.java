@@ -153,6 +153,7 @@ public class Main {
     private RichForm inventoryForm;
     private RichTable fillRollTable;
     private RichTable fillRollNewPopUpTable;
+    private RichInputText orgid;
 
 
     public Main() {
@@ -2727,5 +2728,20 @@ public class Main {
                    vo.executeQuery();
         
         
+    }
+  
+    public void setOrgid(RichInputText orgid) {
+        this.orgid = orgid;
+        FacesContext fctx = FacesContext.getCurrentInstance();
+                ExternalContext ectx = fctx.getExternalContext();
+                HttpSession userSession = (HttpSession)ectx.getSession(false);
+                userSession.setAttribute("OrgId", orgid.getValue());
+            
+        System.out.println(orgid.getValue());
+        
+    }
+
+    public RichInputText getOrgid() {
+        return orgid;
     }
 }

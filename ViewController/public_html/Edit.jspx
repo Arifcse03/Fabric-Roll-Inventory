@@ -132,7 +132,7 @@
                             maximumLength="#{bindings.OrgId.hints.precision}"
                             shortDesc="#{bindings.OrgId.hints.tooltip}"
                             id="it1" partialTriggers="unitNameId"
-                            visible="false">
+                            visible="false" binding="#{MyBean.orgid}">
                 <f:validator binding="#{bindings.OrgId.validator}"/>
                 <af:convertNumber groupingUsed="false"
                                   pattern="#{bindings.OrgId.format}"/>

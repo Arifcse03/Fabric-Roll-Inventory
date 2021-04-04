@@ -74,7 +74,9 @@ public class AppModuleImpl extends ApplicationModuleImpl implements AppModule {
             userSession.setAttribute("orgId", orgId);
             userSession.setAttribute("respId", respId);
             userSession.setAttribute("unitName", getUnitName(orgId));
+            
         }
+       
     }
 
 

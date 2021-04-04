@@ -122,16 +122,8 @@
     <AttrArray Name="AttrNames">
       <Item Value="PocId"/>
     </AttrArray>
-    <AttrArray Name="DerivedAttrNames">
-      <Item Value="BuyerName"/>
-      <Item Value="Style"/>
-      <Item Value="Season"/>
-    </AttrArray>
     <AttrArray Name="ListAttrNames">
       <Item Value="PocId"/>
-      <Item Value="BuyerName"/>
-      <Item Value="Style"/>
-      <Item Value="Season"/>
     </AttrArray>
     <AttrArray Name="ListDisplayAttrNames">
       <Item Value="PocId"/>
