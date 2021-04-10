@@ -57,7 +57,7 @@
  WHERE 
         MNJMFGFABINSINVLDEO.POC_ID = POC.POC_ID
        AND MNJMFGFABINSINVLDEO.LINE_ID = MMFL.LINE_ID
-       and MMFH.ORG_ID=POC.LC_UNIT
+       --and MMFH.ORG_ID=POC.LC_UNIT
        AND MMFH.HEADER_ID = MMFL.HEADER_ID
        AND MMFH.INVOICE_NO = :p_recpt_no_s
        AND MMFH.HEADER_NO = :Doc_no]]>
@@ -76,6 +76,12 @@
     <DesignTime>
       <Attr Name="_DisplaySize" Value="39"/>
     </DesignTime>
+    <Properties>
+      <SchemaBasedProperties>
+        <DISPLAYWIDTH
+          Value="70"/>
+      </SchemaBasedProperties>
+    </Properties>
   </ViewAttribute>
   <ViewAttribute
     Name="FabOunce"
@@ -171,7 +177,7 @@
     <Properties>
       <SchemaBasedProperties>
         <DISPLAYWIDTH
-          Value="30"/>
+          Value="15"/>
       </SchemaBasedProperties>
     </Properties>
   </ViewAttribute>
@@ -191,7 +197,7 @@
     <Properties>
       <SchemaBasedProperties>
         <DISPLAYWIDTH
-          Value="30"/>
+          Value="10"/>
       </SchemaBasedProperties>
     </Properties>
   </ViewAttribute>
