@@ -165,13 +165,15 @@
     </AttrArray>
     <AttrArray Name="ListDisplayAttrNames">
       <Item Value="SystemId"/>
+      <Item Value="PocId"/>
       <Item Value="BuyerName"/>
       <Item Value="Season"/>
       <Item Value="Style"/>
+      <Item Value="Color"/>
+      <Item Value="WashName"/>
       <Item Value="Composition"/>
       <Item Value="Construction"/>
       <Item Value="FabOunce"/>
-      <Item Value="BuyerId"/>
     </AttrArray>
     <DisplayCriteria
       Hint="showAndExecute"/>

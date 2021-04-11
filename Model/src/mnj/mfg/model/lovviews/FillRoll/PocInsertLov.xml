@@ -26,7 +26,8 @@
     <TransientExpression><![CDATA[adf.context.sessionScope.orgId]]></TransientExpression>
   </Variable>
   <SQLQuery>
-    <![CDATA[SELECT DISTINCT H.LC_UNIT,H.POC_ID, H.BUYER_ID,ac.CUSTOMER_NAME BUYER_NAME, H.SEASON,H.STYLE FROM  AR_CUSTOMERS ac,XX_OM_POC_H_T H ,MNJ_MFG_FABRIC_INS_TEST_H MnjMfgFabricInsTestH where ac.CUSTOMER_ID = H.BUYER_ID and H.LC_UNIT=:org_id]]>
+    <![CDATA[SELECT DISTINCT H.LC_UNIT,H.POC_ID, H.BUYER_ID,ac.CUSTOMER_NAME BUYER_NAME, H.SEASON,H.STYLE 
+FROM  AR_CUSTOMERS ac,XX_OM_POC_H_T H ,XX_OM_POC_L_T  l, MNJ_MFG_FABRIC_INS_TEST_H MnjMfgFabricInsTestH where ac.CUSTOMER_ID = H.BUYER_ID and H.LC_UNIT=:org_id]]>
   </SQLQuery>
   <ViewAttribute
     Name="LcUnit"
@@ -55,6 +56,12 @@
     <DesignTime>
       <Attr Name="_DisplaySize" Value="39"/>
     </DesignTime>
+    <Properties>
+      <SchemaBasedProperties>
+        <DISPLAYWIDTH
+          Value="5"/>
+      </SchemaBasedProperties>
+    </Properties>
   </ViewAttribute>
   <ViewAttribute
     Name="BuyerId"
@@ -69,6 +76,12 @@
     <DesignTime>
       <Attr Name="_DisplaySize" Value="39"/>
     </DesignTime>
+    <Properties>
+      <SchemaBasedProperties>
+        <DISPLAYHINT
+          Value="Hide"/>
+      </SchemaBasedProperties>
+    </Properties>
   </ViewAttribute>
   <ViewAttribute
     Name="BuyerName"
@@ -84,6 +97,12 @@
     <DesignTime>
       <Attr Name="_DisplaySize" Value="50"/>
     </DesignTime>
+    <Properties>
+      <SchemaBasedProperties>
+        <DISPLAYWIDTH
+          Value="15"/>
+      </SchemaBasedProperties>
+    </Properties>
   </ViewAttribute>
   <ViewAttribute
     Name="Season"
@@ -99,6 +118,12 @@
     <DesignTime>
       <Attr Name="_DisplaySize" Value="30"/>
     </DesignTime>
+    <Properties>
+      <SchemaBasedProperties>
+        <DISPLAYWIDTH
+          Value="10"/>
+      </SchemaBasedProperties>
+    </Properties>
   </ViewAttribute>
   <ViewAttribute
     Name="Style"
@@ -114,6 +139,12 @@
     <DesignTime>
       <Attr Name="_DisplaySize" Value="100"/>
     </DesignTime>
+    <Properties>
+      <SchemaBasedProperties>
+        <DISPLAYWIDTH
+          Value="15"/>
+      </SchemaBasedProperties>
+    </Properties>
   </ViewAttribute>
   <ResourceBundle>
     <PropertiesBundle

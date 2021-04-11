@@ -100,7 +100,7 @@
     <Properties>
       <SchemaBasedProperties>
         <DISPLAYWIDTH
-          Value="30"/>
+          Value="10"/>
       </SchemaBasedProperties>
     </Properties>
   </ViewAttribute>
@@ -177,7 +177,7 @@
     <Properties>
       <SchemaBasedProperties>
         <DISPLAYWIDTH
-          Value="15"/>
+          Value="10"/>
       </SchemaBasedProperties>
     </Properties>
   </ViewAttribute>
@@ -214,6 +214,12 @@
     <DesignTime>
       <Attr Name="_DisplaySize" Value="39"/>
     </DesignTime>
+    <Properties>
+      <SchemaBasedProperties>
+        <DISPLAYWIDTH
+          Value="5"/>
+      </SchemaBasedProperties>
+    </Properties>
   </ViewAttribute>
   <ViewAttribute
     Name="LcUnit"
@@ -242,6 +248,12 @@
     <DesignTime>
       <Attr Name="_DisplaySize" Value="39"/>
     </DesignTime>
+    <Properties>
+      <SchemaBasedProperties>
+        <DISPLAYWIDTH
+          Value="5"/>
+      </SchemaBasedProperties>
+    </Properties>
   </ViewAttribute>
   <ViewAttribute
     Name="Season"
@@ -260,7 +272,7 @@
     <Properties>
       <SchemaBasedProperties>
         <DISPLAYWIDTH
-          Value="30"/>
+          Value="10"/>
       </SchemaBasedProperties>
     </Properties>
   </ViewAttribute>
@@ -281,7 +293,7 @@
     <Properties>
       <SchemaBasedProperties>
         <DISPLAYWIDTH
-          Value="30"/>
+          Value="10"/>
       </SchemaBasedProperties>
     </Properties>
   </ViewAttribute>
@@ -323,7 +335,7 @@
     <Properties>
       <SchemaBasedProperties>
         <DISPLAYWIDTH
-          Value="30"/>
+          Value="10"/>
       </SchemaBasedProperties>
     </Properties>
   </ViewAttribute>
