@@ -55,7 +55,8 @@
          AND I.LINE_ID = MMFPL.LINE_ID
          AND I.HEADER_ID = MMFIH.HEADER_ID
          --AND I.HEADER_ID = 4146
-         AND NOT EXISTS
+        /* commited by arif 
+              AND NOT EXISTS
                     (SELECT *
                        FROM MNJ_MFG_FABRIC_INS_TEST_L MMFP1,
                             MNJ_MFG_FABINS_PROD_L MMFPL1
@@ -77,7 +78,14 @@
                                          || ' - '
                                          || D.ROLL_NO
                                    END
-                            AND I.COLOR = MMFPL1.RAW_COLOR)
+                            AND I.COLOR = MMFPL1.RAW_COLOR)*/
+AND NOT EXISTS
+                    (SELECT MMFP1. ROLL_NO
+                       FROM MNJ_MFG_FABRIC_INS_TEST_L MMFP1,
+                            MNJ_MFG_FABINS_PROD_L MMFPL1
+                      WHERE     MMFP1.PROD_L_ID = MMFPL1.PROD_L_ID
+                            AND MMFPL1.HEADER_ID = I.HEADER_ID
+                           )
 ORDER BY D.ROLL_SR_NO]]>
   </SQLQuery>
   <ViewAttribute

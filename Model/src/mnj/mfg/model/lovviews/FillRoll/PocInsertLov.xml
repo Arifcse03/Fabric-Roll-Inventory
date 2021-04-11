@@ -146,6 +146,48 @@ FROM  AR_CUSTOMERS ac,XX_OM_POC_H_T H ,XX_OM_POC_L_T  l, MNJ_MFG_FABRIC_INS_TEST
       </SchemaBasedProperties>
     </Properties>
   </ViewAttribute>
+  <ViewCriteria
+    Name="PocInsertLovCriteria"
+    ViewObjectName="mnj.mfg.model.lovviews.FillRoll.PocInsertLov"
+    Conjunction="AND">
+    <Properties>
+      <CustomProperties>
+        <Property
+          Name="displayOperators"
+          Value="InAdvancedMode"/>
+        <Property
+          Name="autoExecute"
+          Value="false"/>
+        <Property
+          Name="allowConjunctionOverride"
+          Value="true"/>
+        <Property
+          Name="showInList"
+          Value="true"/>
+        <Property
+          Name="mode"
+          Value="Basic"/>
+      </CustomProperties>
+    </Properties>
+    <ViewCriteriaRow
+      Name="vcrow34"
+      UpperColumns="1">
+      <ViewCriteriaItem
+        Name="Season"
+        ViewAttribute="Season"
+        Operator="CONTAINS"
+        Conjunction="AND"
+        UpperColumns="1"
+        Required="Optional"/>
+      <ViewCriteriaItem
+        Name="Style"
+        ViewAttribute="Style"
+        Operator="CONTAINS"
+        Conjunction="OR"
+        Required="Optional"
+        UpperColumns="1"/>
+    </ViewCriteriaRow>
+  </ViewCriteria>
   <ResourceBundle>
     <PropertiesBundle
       PropertiesFile="mnj.mfg.model.ModelBundle"/>
